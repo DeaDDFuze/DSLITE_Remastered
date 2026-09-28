@@ -277,7 +277,7 @@ No complete replacement motherboard exists yet.
 
 ### Phase 2 — Schematic reconstruction
 
-- [X] Recreate `USG-CPU-10` schematics
+- [ ] Recreate `USG-CPU-10` schematics
 - [ ] Verify connections
 - [ ] Create missing KiCad symbols
 - [ ] Create missing footprints
