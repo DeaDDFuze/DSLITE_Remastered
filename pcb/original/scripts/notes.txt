@@ -1,0 +1,1 @@
+2 vias are missing from the vdd plane. but they are present on the vias script. one is near a hole in the left side of the board. and the other is close to the vdd1.2 plane (where the scan is scratched).
