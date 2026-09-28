@@ -1,0 +1,113 @@
+# ============================================================
+# DSLITE_Remastered - Git Attributes
+# ============================================================
+
+# ------------------------------------------------------------
+# Text files
+# Normalize line endings in the repository.
+# ------------------------------------------------------------
+
+* text=auto
+
+*.md        text eol=lf
+*.txt       text eol=lf
+*.csv       text eol=lf
+*.json      text eol=lf
+*.xml       text eol=lf
+*.yaml      text eol=lf
+*.yml       text eol=lf
+
+*.sh        text eol=lf
+*.py        text eol=lf
+*.c         text eol=lf
+*.cpp       text eol=lf
+*.h         text eol=lf
+*.hpp       text eol=lf
+*.v         text eol=lf
+*.sv        text eol=lf
+*.vhd       text eol=lf
+*.vhdl      text eol=lf
+
+
+# ------------------------------------------------------------
+# KiCad
+#
+# KiCad project files are text-based.
+# Keep them in normal Git so diffs remain available.
+# ------------------------------------------------------------
+
+*.kicad_pro text eol=lf
+*.kicad_sch text eol=lf
+*.kicad_pcb text eol=lf
+*.kicad_sym text eol=lf
+*.kicad_mod text eol=lf
+*.kicad_wks text eol=lf
+
+fp-lib-table text eol=lf
+sym-lib-table text eol=lf
+
+
+# ------------------------------------------------------------
+# Legacy Autodesk EAGLE sources
+#
+# Modern EAGLE .sch/.brd/.lbr files are XML text files.
+# These are intentionally NOT stored in LFS.
+# ------------------------------------------------------------
+
+*.sch text eol=lf
+*.brd text eol=lf
+*.lbr text eol=lf
+*.scr text eol=lf
+
+
+# ------------------------------------------------------------
+# Git LFS - Fusion 360 / CAD source files
+# ------------------------------------------------------------
+
+*.f3d filter=lfs diff=lfs merge=lfs -text
+*.f3z filter=lfs diff=lfs merge=lfs -text
+
+*.step filter=lfs diff=lfs merge=lfs -text
+*.stp  filter=lfs diff=lfs merge=lfs -text
+
+*.iges filter=lfs diff=lfs merge=lfs -text
+*.igs  filter=lfs diff=lfs merge=lfs -text
+
+
+# ------------------------------------------------------------
+# Git LFS - 3D meshes
+# ------------------------------------------------------------
+
+*.stl filter=lfs diff=lfs merge=lfs -text
+*.3mf filter=lfs diff=lfs merge=lfs -text
+
+
+# ------------------------------------------------------------
+# Git LFS - Reverse engineering source images
+# ------------------------------------------------------------
+
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+
+
+# ------------------------------------------------------------
+# Git LFS - Binary office/reference documents
+# ------------------------------------------------------------
+
+*.pdf  filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+
+
+# ------------------------------------------------------------
+# Binary images
+#
+# JPG/PNG are kept in normal Git for now.
+# They can be migrated to LFS later if the repository becomes
+# excessively large.
+# ------------------------------------------------------------
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
