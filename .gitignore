@@ -1,0 +1,22 @@
+# KiCad backups / temporary files
+*-backups/
+*.bak
+*.bck
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+~*.lck
+
+# KiCad generated files
+*.net
+
+# Fusion 360 / CAD exports temporaires
+*.f3d~
+*.f3z~
+*.autosave
+
+# OS / editors
+.DS_Store
+Thumbs.db
+*.swp
+*~
